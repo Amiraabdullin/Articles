@@ -6,6 +6,6 @@ class ArticleForm(forms.ModelForm):
         model = Article
         fields = ['title', 'content']
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter title here'}),
-            'content': forms.Textarea(attrs={'class': 'form-control', 'rows': 6, 'placeholder': 'Write your content...'}),
+            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Введите заголовок'}),
+            'content': forms.Textarea(attrs={'class': 'form-control', 'rows': 6, 'placeholder': 'Напишите свой пост...'}),
         }
